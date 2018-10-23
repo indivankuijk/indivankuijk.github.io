@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    h2
+{ color: red;
+}
+.btns {
+  background-color:yellow;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+ .btna {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+ .btn:hover {opacity: 1}
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: greenyellow;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+    
+    
+    
+    
+    
+    
+    
+    #groen{
+        background-color: aquamarine; 
+        
+        width: 799px;
+        height: auto; 
+        overflow-y: auto;
+        overflow-x: auto;
+        border: 10px solid rgb(161,161,161);
+        padding: 6px;
+    }
+    
+    
+    .camera{
+        color: red;
+        background color: aquamarine;
+        
+        
+    }
+    body{
+        background-color: darkseagreen;
+    }
+    
+    #intro{
+        
+        border: 6px solid darkseagreen;
+        padding: 6px; 
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #foto{
+        
+        border: 6px  solid black;
+        padding: 6px; 
+        width: 799px;
+        height:auto;
+    }
+    
+    #kader{margin: 15px 6px 15 px 6 px;
+    
+    border: 15px solid  limegreen;
+        margin: 40px 0px 40px 0px;
+        text-align: center;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    h2
+{ color: forestgreen;
+}
+.btns {
+  background-color:yellow;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+ .btna {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+ .btn:hover {opacity: 1}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</style>
+<body>
+
+    <h2 style="text-align:center"><strong>Info over fotografie. <br><br>Gemaakt door een echte kenner en specialist in het vak!     </strong> </h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://s3-eu-central-1.amazonaws.com/rootsmagazine/26_sfeerbeeld_EK_201708071-768x512.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="https://cdn.eventplanner.be/imgs/xnr8133_column-de-natuur-verweven-in-events.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://www.thankgoditravel.nl/wp-content/uploads/2018/05/frankrijk-bergen-1080x720.jpg" style="width:100%">
+  </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="Mooie foto's van planten">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Prachtig foto's van het bos">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Fantastische foto's van de bergen">
+    </div>
+      
+      
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+   
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+ 
+   
+    
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    
+    
+    
+<style>
+    
+    
+    .specs{
+        
+        background-color: aqua;
+        
+        width: 60%;
+        height: 160px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin: 15px 10px  40px 15px;
+        border:  5x solid red;
+        padding: 6px;
+        
+    }
+    
+    
+h2
+    
+    
+{ color: red;
+}
+.btns {
+  background-color:yellow;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+ .btna {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+ .btn:hover {opacity: 1}
+    
+    
+    .tekst{
+        
+        color: cornflowerblue;
+        
+    }
+    
+    
+    
+    
+    h3{
+        color: grey;
+        font-family: monospace;
+            background-color: aliceblue;
+    }
+    
+    
+    
+    
+    
+    
+    
+    .spiegel{
+        width: 50%;
+        height: 100px;
+        margin: 20px 0px 15px 10px;
+        border: 4px solid limegreen;
+    }
+    #spiegel{
+        width: 50%;
+            height: 400px;
+        margin: 20px 10px 10px 20px;
+        border: 8px solid grey; 
+         overflow-x: hidden;
+        overflow-y: auto;
+    }
+    
+        #compact {
+        width: 50%;
+            height: 400px;
+        margin: 20px 10px 10px 20px;
+        border: 8px solid grey; 
+         overflow-x: hidden;
+            overflow-y: auto;}
+    
+    
+        #spiegelloze{
+        width: 50%;
+            height: 400px;
+        margin: 20px 10px 10px 20px;
+        border: 8px solid grey; 
+         overflow-x: hidden;
+            overflow-y: auto;}
+    #kl{
+        
+        
+        color: darkgreen;
+        background-color: aquamarine;
+    }
+    #kleur{
+        color: darkgreen;
+        background-color: lightyellow;
+    }
+    
+    #iso[
+    text-aligne:
+    ]
+    
+    #isoo{
+        
+        text-align: center;
+        background-color: yellow;
+        
+        color: darkgreen;
+    }
+    #kaas{
+        
+        background-color: skyblue;
+        color: black;
+        font-family: fantasy;
+        
+    }
+</style>
+</head>
+<body><br><br><br><br> <br> <br>
+    <div id= "groen">
+    <h1 id="intro"> <strong>Wat u kunt vinden op deze website:</strong></h1>
+ <ul>
+     <li>  Content:</li>
+     <li> <a href="#kader"><em>De ideale camera voor u!</em></a></li>
+     <li>  <a href="#iso"> <em> Iso instellen  </em></a></li>
+      
+    </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
+    
+    <h1 class ="camera"> <strong>"De ideale camera voor u."</strong> </h1> 
+    
+    <img id="foto" src ="https://icdn9.digitaltrends.com/image/nikon-d850-review-29-800x534-c.jpg"><br><br><br><br><br><br>
+    
+    
+    
+    <div id= "kader">
+        <h3> <strong> Camera kiezen: 3 types </strong></h3>    <br><br><br>
+De belangrijkste drie cameratypes zijn de compact camera, de spiegelloze systeemcamera en de spiegelreflexcamera. <br>Uiteraard zijn er nog meer mogelijkheden, maar we kijken hier naar deze drie en dan met name de laatste twee.<br>
+<br><br><br>
+        <h3><strong> Compact </strong> </h3><br><br><br>
+Wil je niet alles zelf instellen, handzaamheid, geen gedoe met het wisselen van objectieven en een goede kwaliteit voor het delen van foto's en filmpjes op social media?<br> Dan is een compactcamera voor jou het meest geschikt.<br> Je kunt tegenwoordig al een goede compactcamera met filmfunctie kopen voor onder de 180 euro.<br><br><br>
+
+        <h3> <strong> Systeemcamera </strong></h3><br><br><br>
+Wil je iets meer mogelijkheden om zelf een en ander in te stellen, vind je het geen probleem (of juist een voordeel) om objectieven te wisselen, maar houd je nog steeds van handzaam? <br>Ga dan voor een spiegelloze systeemcamera. Systeemcamera’s zijn meestal iets sneller dan compactcamera’s.<br> De sensor is groter voor een betere beeldkwaliteit en over het algemeen maak je er kwalitatief betere video’s mee.
+<br><br><br>
+            <h3><strong>Spiegelreflex</strong></h3><br><br><br>
+Hoewel de verschillen tussen de systeemcamera en de spiegelreflex steeds kleiner worden, zijn er nog wel verschillen.<br> Een spiegelreflexcamera heeft vaak nog een grotere sensor, zodat de kwaliteit van de beelden beter is.<br> Daarnaast heeft hij een optische zoeker en zie je alles 'echt' door de lens. <br>Ten slotte werk je met een spiegelreflexcamera een fractie sneller dan met een systeemcamera. <br>Dat is wel zo handig, bijvoorbeeld als je sportmomenten wilt fotograferen.<br><br><br>
+
+        <strong>Drie topcamera's </strong> <br><br><br>
+
+De Sony RX100, een van de meest felbegeerde compact camera's van de afgelopen jaren!<br>
+
+ 
+De Sony A7 is een erg gewild camera, voornamelijk onder de fotografen die overstappen van digitale spiegelreflex (DSLR) naar een systeemcamera.<br>
+
+
+5D, een DSLR pronkstuk van Canon.<br><br><br><br><br><br>
+<h1>
+<div class= "specs">
+  <table>
+            <thead>
+                <tr>
+                    <th><strong><span id= "kleur">Merk</span></strong></th>
+                    <th><strong><span id= "kleur"> Model</span></strong> </th>
+                    <th><strong><span id= "kleur">Prijs</span> </strong></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong> Sony </strong></td>
+                    <td> <strong> RX100 </strong> </td>
+                    <td> <strong> 1300 euro </strong> </td>
+                </tr>
+                <tr>
+                    <td>Sony</td>
+                    <td><strong>A7 </strong></td>
+                    <td> 950 euro inclusief kit-lens</td>
+                </tr>
+                <tr>
+                     <td>Canon</td>
+                    <td><strong>5D mark IV </strong></td>
+                    <td> 3600 euro inclusief oculair </td>
+                </tr>
+            </tbody>
+        </table>
+    
+         </div>
+    <br>
+    <br><br><br><br><br><br>
+        </h1>
+ <div id= "systemen" >  
+    <h2> "Foto's van de verschillende systemen."</h2><br><br><br><br><br>
+     
+<div id="spiegel">
+<h2> Spiegelreflex camera </h2>
+    <img src="https://kijkenziefotoschool.nl/wp-content/upload_folders/kijkenziefotoschool.nl/blog/welke-spiegelreflexcamera-kopen-1-1170x468.jpg" style="width:100%">
+    </div>
+     
+     <div id="compact">
+     <h2>compact camera</h2>
+
+    <img src="https://i.otto.nl/i/otto/16212030/nikon-coolpix-a900-compactcamera-203-megapixel-35x-optische-zoom-75-cm-3-inch-display-zwart.jpg?$ovnl_seo_index$" style="width:100%">
+     </div>
+     <div id="spiegelloze">
+  <h2> spiegelloze systeemcamera </h2>
+    <img src="https://static.cmra.nu/149/1492670856_213.jpg" style="width:100%">
+     </div>
+     
+    </div> 
+    
+    
+    
+    <br><br><br>
+    
+    <h2>Meer info?</h2><br><br>
+ <button class="btns"><a href="https://www.vandenborre.be/welke-fototoestel-kopen/compact-bridge-camera">Klik "hier" voor meer info.  </a></button>
+
+    
+    <br>
+        <br>
+
+        <br>
+
+        <br>
+    <br>
+
+        <br>
+
+        <br>
+
+        <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 id="iso"><strong> "Iso" </strong></h2>
+        
+        <span id="kaas">
+        ISO waarde staat voor de lichtgevoeligheid van de film/beeldsensor. <br>Als er veel licht is, kan je met een lage ISO waarde bv 100 of 200 ISO een scherpe foto verkrijgen.<br> Als het juist donkerder is en er weinig omgevingslicht aanwezig is, heb je vaak een hogere ISO waarde nodig om toch een scherpe foto te krijgen.<br> (denk bijvoorbeeld aan 800 a 1600 ISO waarde).<br> Het nadeel bij een hoge ISO waarde is dat er ruis optreedt naar mate je een steeds hogere ISO waarde kiest (zichtbaar vanaf ongeveer boven de 400 ISO).<br><br><br>
+        
+        
+        
+        
+        Tips ISO waarde
+Even alles op een rijtje: Bij veel licht een laag ISO getal, denk aan 100 of 200 ISO max.<br><br><br>
+
+Bij weinig licht een hoge ISO waarde, maar er rekening mee houden dat er veel meer ruis op de foto aanwezig is door de hoge ISO waarde, denk aan 800 of 1600 ISO of dit verhelpen met een statief of externe flitser.
+        </span>
+        <br><br><br><br><br>
+        <h2> <strong> Volgend deel zien? </strong> </h2>
+        
+        
+ <button class="btns"><a href="https://indivankuijk.github.io/fotodeel2.html">Klik "hier" voor nog meer foto plezier!!!! </a></button>
+
+</body>
+</html>
